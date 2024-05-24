@@ -1,0 +1,569 @@
+body {
+	background-color: black;
+}
+
+.btn__sass {
+	position: absolute;
+	top: 10px;
+	right: 500px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 100px;
+	background-color: transparent;
+	overflow: hidden;
+	margin: 0;
+}
+
+.btn__sass {
+	color: rgb(255, 0, 0);
+	text-decoration: none;
+	padding: 10px;
+	transition: background-color 0.3s ease;
+	margin: 0 20px;
+	border: 2px solid rgb(255, 0, 0);
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 10px;
+  background-color: red;
+}
+
+.btn__html {
+	position: absolute;
+	top: 10px;
+	right: 300px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px;
+	background-color: transparent;
+	overflow: hidden;
+	margin: 0;
+}
+
+.btn__html {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	transition: background-color 0.3s ease;
+	margin: 0 20px;
+	border: 2px solid white;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 10px;
+}
+
+.btn__css {
+	position: absolute;
+	top: 10px;
+	right: 100px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px;
+	background-color: transparent;
+	overflow: hidden;
+	margin: 0;
+}
+
+.btn__css {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	transition: background-color 0.3s ease;
+	margin: 0 20px;
+	border: 2px solid white;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 10px;
+}
+h2 {
+    font-size: 40px;
+    padding: 15px 40px;
+    border: 2px solid #051c2e;
+    border-radius: 5px;
+  }
+
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  .btn {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: 100ms 300ms;
+    -o-transition: 100ms 300ms;
+    transition: 100ms 300ms;
+  }
+
+  .btn:hover {
+    border: 2px solid;
+    border-radius: 5px;
+  }
+
+  .btn__sass::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #cf649a;
+    z-index: -1;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 40px 40px 0 0;
+    -webkit-box-shadow: 0 0 10px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000;
+    box-shadow: 0 0 10px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000;
+  }
+  .btn__sass:hover::before {
+    height: 180%;
+  }
+  
+  .btn__sass:hover {
+    -webkit-box-shadow: 0 0 10px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000;
+    box-shadow: 0 0 10px #ff0000, 0 0 40px #ff0000, 0 0 80px #ff0000;
+  }
+  
+  .btn__html::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #df4b25;
+    z-index: -1;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 40px 40px 0 0;
+    -webkit-box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+    box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+  }
+  
+  .btn__html:hover::before {
+    height: 180%;
+  }
+  
+  .btn__html:hover {
+    -webkit-box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+    box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+  }
+  
+  .btn__css::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3596cf;
+    z-index: -1;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 40px 40px 0 0;
+    -webkit-box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
+    box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
+  }
+  
+  .btn__css:hover::before {
+    height: 180%;
+  }
+  
+  .btn__css:hover {
+    -webkit-box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
+    box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
+  }
+  
+  .zz {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .qq:hover .zz{
+    transform: rotateX(-50deg) rotateY(-50deg) translateZ(-80px);
+  }
+  .zz {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .qw:hover .zz{
+    transform: rotateX(-50deg) rotateY(-50deg) translateZ(-80px);
+  }
+  .zz {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .qe:hover .zz{
+    transform: rotateX(-50deg) rotateY(-50deg) translateZ(-80px);
+  }
+  .zz {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .cc:hover .zz{
+    transform: rotateX(-50deg) rotateY(-50deg) translateZ(-80px);
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .portfolio-text {
+    animation: fade-in 2s ease-in-out forwards;
+  }
+
+  @media screen and (max-width: 600px) {
+    .fade-in-text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
+    .fade-in-text {
+      font-size: 1.5rem;
+    }
+  }
+  
+.portfolio-image {
+    animation: fade-in 2s ease-in-out forwards;
+  }
+
+  @media screen and (max-width: 600px) {
+    .fade-in-text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 600px) and (max-width: 1200px) {
+    .image {
+      font-size: 1.5rem;
+    }
+  }
+  
+
+ @media screen and (min-width: 1200px) 
+   { .image 
+      font-size: 2rem
+}
+
+.sonu
+{
+  color: aqua;
+  position: absolute;
+  left: 39%;
+  top: 20%;
+}
+
+.portfolio-image {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  bottom: 20%;
+}
+
+.portfolio-text {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  position: absolute;
+  color: aliceblue;
+  bottom: 10px;
+  left: 50%;
+  top: 300px;
+  right: 10%;
+  font-size: 21px;
+}
+.portfolio-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.portfolio-container img {
+  width: 100%;
+  height: auto;
+}
+.qq {
+  position: relative;
+  top: 200px;
+}
+.ww {
+  font-family: "Dancing Script", cursive;
+  position: relative;
+  bottom: 480px;
+  left: 350px;
+  color: #00ffd5;
+  font-weight: bold;
+}
+
+.image-text {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  right: 10px;
+  color: white;
+  font-size: 20px;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-on-scroll {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  bottom: 10px;
+  left: 50%;
+  top: 1200px;
+  right: 10%;
+  font-size: 21px;
+}
+.fade-in-on-scroll {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.fade-in-on-scroll.in-view {
+  opacity: 1;
+  animation: fadeIn 4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.qw {
+  position: absolute;
+  top: 1200px;
+  
+}
+
+.qe {
+  position: absolute;
+  top: 2200px;
+  
+}
+
+.fade-in-on-scroll1 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  bottom: 10px;
+  left: 50%;
+  top: 2100px;
+  right: 10%;
+  font-size: 21px;
+}
+
+.fade-in-on-scroll1 {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.fade-in-on-scroll1.in-view {
+  opacity: 1;
+  animation: fadeIn 4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#background-video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media (orientation: portrait) {
+  #background-video {
+      width: auto;
+      height: 100%;
+  }
+}
+
+@media (orientation: landscape) {
+  #background-video {
+      width: 100%;
+      height: auto;
+  }
+}
+
+.cc {
+  position: absolute;
+  top: 3200px;
+  
+}
+
+.fade-in-on-scroll0 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  bottom: 10px;
+  left: 50%;
+  top: 3000px;
+  right: 10%;
+  font-size: 21px;
+}
+
+.fade-in-on-scroll0 {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.fade-in-on-scroll0.in-view {
+  opacity: 1;
+  animation: fadeIn 4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.mk
+{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.mm
+{
+  font-size: 40px;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #00ffd5;
+  position: absolute;
+  top: 3900px;
+  left: 200px;
+}
+iframe
+{
+  position: absolute;
+  top: 4000px;
+  left: 17%;
+}
+
+
+.emoji {
+  font-size: 2em;
+}
+
+.text {
+  top: 4100px;
+  right: 90%;
+  position: absolute;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: red;
+  outline: auto;
+  outline-color: rgb(0, 255, 200);
+  color: aliceblue;
+  width: 50px; /* Change to your desired width */
+  height: 50px; /* Change to your desired height */
+  line-height: 50px; /* Center the text vertically */
+  text-align: center;
+  animation: fade-in-out 2s ease-in-out infinite;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.nb{
+  font-size: 40px;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #00ffd5;
+  position: absolute;
+  top: 4600px;
+  left: 200px;
+}
+.flip-button{
+  position: absolute;
+  top: 4800px;
+  left: 100px;
+}
+.flip-button {
+  cursor: pointer;
+}
+
+.flip-button:hover + .flip-container .flipper,
+.flip-button:focus + .flip-container .flipper {
+  transform: rotateY(180deg);
+}
+.flip-container{
+  position: absolute;
+  top: 4800px;
+  left: 200px;
+}
+.flip-container {
+  perspective: 100px;
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: absolute;
+}
+
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
